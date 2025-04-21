@@ -1,0 +1,7 @@
+flask
+pymongo
+opencv-python
+face_recognition
+numpy
+bcrypt
+python-dotenv

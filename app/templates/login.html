@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login - Face Recognition Attendance System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="/" class="logo">Face Attendance System</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/login.html">Login</a></li>
+                <li><a href="/register.html">Register</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container login-container">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Student Login</h2>
+                </div>
+                <div class="card-body">
+                    <!-- Login Options -->
+                    <div class="login-options">
+                        <div class="login-option active" id="credentialOption">Credential Login</div>
+                        <div class="login-option" id="faceOption">Face Login</div>
+                    </div>
+                    
+                    <!-- Credential Login Form -->
+                    <form id="credentialLoginForm" method="POST" action="/login" class="d-block">
+                        <div class="form-group">
+                            <label for="student_id" class="form-label">Student ID</label>
+                            <input type="text" class="form-control" id="student_id" name="student_id" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        
+                        <div class="form-group mt-4">
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        </div>
+                    </form>
+                    
+                    <!-- Face Login Form -->
+                    <form id="faceLoginForm" method="POST" action="/face-login" class="d-none">
+                        <div class="form-group">
+                            <div class="text-center">
+                                <div id="cameraContainer" class="camera-container mb-2">
+                                    <video id="video" class="camera-feed" autoplay></video>
+                                    <canvas id="canvas" class="d-none"></canvas>
+                                    <div id="cameraOverlay" class="camera-overlay d-none">
+                                        Face Captured
+                                    </div>
+                                </div>
+                                
+                                <div class="camera-buttons">
+                                    <button type="button" id="startCamera" class="btn btn-info">Start Camera</button>
+                                    <button type="button" id="captureImage" class="btn btn-primary d-none">Capture Image</button>
+                                    <button type="button" id="retakeImage" class="btn btn-warning d-none">Retake</button>
+                                </div>
+                                
+                                <input type="hidden" id="face_image" name="face_image">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group mt-4">
+                            <button type="submit" class="btn btn-success btn-block" id="faceLoginBtn" disabled>Login with Face</button>
+                        </div>
+                    </form>
+                    
+                    <div class="text-center mt-3">
+                        <p>Don't have an account? <a href="/register.html">Register here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="../static/js/camera.js"></script>
+    <script>
+        // Toggle between credential and face login
+document.addEventListener('DOMContentLoaded', function() {
+    const credentialOption = document.getElementById('credentialOption');
+    const faceOption = document.getElementById('faceOption');
+    const credentialLoginForm = document.getElementById('credentialLoginForm');
+    const faceLoginForm = document.getElementById('faceLoginForm');
+
+    credentialOption.addEventListener('click', function() {
+        credentialOption.classList.add('active');
+        faceOption.classList.remove('active');
+        credentialLoginForm.style.display = 'block';
+        faceLoginForm.style.display = 'none';
+    });
+
+    faceOption.addEventListener('click', function() {
+        faceOption.classList.add('active');
+        credentialOption.classList.remove('active');
+        faceLoginForm.style.display = 'block';
+        credentialLoginForm.style.display = 'none';
+    });
+});
+
+            
