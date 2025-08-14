@@ -35,26 +35,5 @@ Integrates **YOLOv5s-face** for detection, **dlib ResNet-v1** for recognition, a
 ---
 
 ## 📂 Project Structure
-.
-└── Advance_attendance_system/
-    ├── app/
-    │   └── static/
-    │       ├── css/
-    │       │   └── style.css
-    │       ├── templates/
-    │       │   ├── login.html
-    │       │   ├── register.html
-    │       │   └── dashboard.html
-    │       └── js/
-    │           ├── camera.js
-    │           └── validation.js
-    ├── database
-    ├── venv
-    ├── .env
-    ├── models/
-    │   ├── shape_predictor_68_face_landmarks.dat
-    │   ├── dlib_face_recognition_resnet_model_v1.dat
-    │   ├── yolov5s-face.onnx
-    │   └── anti-spoof-detector.onnx
-    ├── app.py
-    └── requirements.txt  
+
+   ![Project Structure](https://github.com/user-attachments/assets/3eb759a7-5cb3-4937-b91a-8d609c2dc4ff)
