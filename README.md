@@ -12,14 +12,13 @@ Integrates **YOLOv5s-face** for detection, **dlib ResNet-v1** for recognition, a
 ![Login Page](<img width="1374" height="825" alt="Screenshot 2025-05-16 004747" src="https://github.com/user-attachments/assets/dd991983-0a52-4603-8e00-59b4edd7ac4b" />)
 
 ### Registration Page
-![Registration Page](<img width="628" height="825" alt="Screenshot 2025-05-16 004905" src="https://github.com/user-attachments/assets/65815782-88f2-458e-9afa-0a7fd5274aab" />)
+![Registration Page](<img width="628" height="825" alt="Screenshot 2025-05-16 004905" src="https://github.com/user-attachments/assets/65815782-88f2-458e-9afa-0a7fd5274aab"/>)
 
 ### Dashboard
-![Dashboard](<img width="958" height="825" alt="Screenshot 2025-05-16 014922" src="https://github.com/user-attachments/assets/a2a59238-f829-4845-8203-36892b819c5c" />)
+![Dashboard](<img width="958" height="825" alt="Screenshot 2025-05-16 014922" src="https://github.com/user-attachments/assets/a2a59238-f829-4845-8203-36892b819c5c"/>)
 
 ### Demo Video
 [▶ Watch the Demo](https://drive.google.com/file/d/14qV4HA2Ne9sjvqemmxPlpjlJyV_Kl3C5/view?usp=sharing)  
-*(If hosted elsewhere like Google Drive or YouTube, replace with the public link)*
 
 ---
 
