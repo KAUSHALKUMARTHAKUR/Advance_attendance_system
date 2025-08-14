@@ -9,13 +9,13 @@ Integrates **YOLOv5s-face** for detection, **dlib ResNet-v1** for recognition, a
 ## 📸 Demo
 
 ### Login Page
-![Login Page](<img width="1374" height="825" alt="Screenshot 2025-05-16 004747" src="https://github.com/user-attachments/assets/dd991983-0a52-4603-8e00-59b4edd7ac4b" />)
+![Login Page](https://github.com/user-attachments/assets/dd991983-0a52-4603-8e00-59b4edd7ac4b)
 
 ### Registration Page
-![Registration Page](<img width="628" height="825" alt="Screenshot 2025-05-16 004905" src="https://github.com/user-attachments/assets/65815782-88f2-458e-9afa-0a7fd5274aab"/>)
+![Registration Page](https://github.com/user-attachments/assets/65815782-88f2-458e-9afa-0a7fd5274aab)
 
 ### Dashboard
-![Dashboard](<img width="958" height="825" alt="Screenshot 2025-05-16 014922" src="https://github.com/user-attachments/assets/a2a59238-f829-4845-8203-36892b819c5c"/>)
+![Dashboard](https://github.com/user-attachments/assets/a2a59238-f829-4845-8203-36892b819c5c)
 
 ### Demo Video
 [▶ Watch the Demo](https://drive.google.com/file/d/14qV4HA2Ne9sjvqemmxPlpjlJyV_Kl3C5/view?usp=sharing)  
@@ -35,17 +35,26 @@ Integrates **YOLOv5s-face** for detection, **dlib ResNet-v1** for recognition, a
 ---
 
 ## 📂 Project Structure
-Advance_attendance_system/
-│
-├── app/
-│ ├── static/
-│ │ ├── css/ # Stylesheets
-│ │ ├── js/ # Frontend scripts
-│ │ └── templates/ # HTML pages
-│ └── ...
-├── models/ # ML models for detection & recognition
-├── database # Database-related files/configs
-├── .env # Environment variables (Mongo URI, secrets)
-├── app.py # Flask app entry point
-├── requirements.txt # Python dependencies
-└── venv # Virtual environment (ignored in Git)
+.
+└── Advance_attendance_system/
+    ├── app/
+    │   └── static/
+    │       ├── css/
+    │       │   └── style.css
+    │       ├── templates/
+    │       │   ├── login.html
+    │       │   ├── register.html
+    │       │   └── dashboard.html
+    │       └── js/
+    │           ├── camera.js
+    │           └── validation.js
+    ├── database
+    ├── venv
+    ├── .env
+    ├── models/
+    │   ├── shape_predictor_68_face_landmarks.dat
+    │   ├── dlib_face_recognition_resnet_model_v1.dat
+    │   ├── yolov5s-face.onnx
+    │   └── anti-spoof-detector.onnx
+    ├── app.py
+    └── requirements.txt  
